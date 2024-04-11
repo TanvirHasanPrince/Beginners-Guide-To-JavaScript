@@ -50,6 +50,6 @@ ES6 introduced arrow function syntax, a shorter way to write functions by using 
 Arrow functions remove the need to type out the keyword function every time you need to create a function. Instead, you first include the parameters inside the ( ) and then add an arrow => that points to the function body surrounded in { }
 
  Things to remember with arrow function:
-   - Shorter Syntax
-   - Lexical this Binding
-   - No arguments Object
+   - Shorter Syntax: Arrow functions allow you to define functions using a shorter syntax. Instead of the function keyword, you use the => (fat arrow) syntax
+   - Lexical this Binding: One significant advantage of arrow functions is their lexical this binding behavior. Traditional functions in JavaScript have their own this context, which can vary depending on how they are called. Arrow functions, however, inherit the this value from the enclosing lexical context. This means that inside an arrow function, this refers to the this value of the surrounding code. It's especially useful when working with object methods or event handlers.
+   - No arguments Object: Unlike traditional functions, arrow functions do not have their own arguments object. If you need to access the arguments passed to an arrow function, you can use the rest parameters (...).
